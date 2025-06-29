@@ -337,7 +337,7 @@ int cmd_send_pack(int argc,
 
 	if (!ret && !transport_refs_pushed(remote_refs))
 		/* stable plumbing output; do not modify or localize */
-		fprintf(stderr, "Everything up-to-date\n");
+		fprintf(stderr, "Everything up to date.\n");
 
 	string_list_clear(&push_options, 0);
 	free_refs(remote_refs);

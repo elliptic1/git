@@ -412,9 +412,9 @@ static void finish_up_to_date(void)
 {
 	if (verbosity >= 0) {
 		if (squash)
-			puts(_("Already up to date. (nothing to squash)"));
+			puts(_("Everything up to date. (nothing to squash)"));
 		else
-			puts(_("Already up to date."));
+			puts(_("Everything up to date."));
 	}
 	remove_merge_branch_state(the_repository);
 }
